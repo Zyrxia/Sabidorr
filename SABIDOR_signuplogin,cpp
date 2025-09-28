@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+
+string username, password;
+void signup() {
+    
+    
+    cout << "=====================\n";
+    cout << "SIGN UP\n";
+    cout << "=====================\n\n";
+    cout << "=====================\n";
+    cout << "Enter username: ";
+    cin >> username;
+    cout << "Enter password: ";
+    cin >> password;
+    cout << "=====================\n\n";
+    cout << "=====================\n";
+    cout << "Account created successfully!\n";
+    cout << "=====================\n\n";
+    
+}
+
+int main() {
+    signup();
+
+    string inputUsername, inputPassword;
+
+    cout << "=====================\n";
+    cout << "LOG IN\n";
+    cout << "=====================\n";
+    cout << "Enter username: ";
+    cin >> inputUsername;
+    cout << "Enter password: ";
+    cin >> inputPassword;
+
+
+    if (username == inputUsername && password == inputPassword) {
+        cout << "Welcome, " << username << "!" << endl;
+    } else {
+        cout << "Incorrect username or password." << endl;
+    }
+
+    return 0;
+}
